@@ -1,0 +1,4 @@
+<!doctype html><title>Tasks</title>
+<h1>Tasks</h1>
+<form method="post"><input name="title" placeholder="Title"/><input name="difficulty" placeholder="1-5"/><input name="priority" placeholder="1-5"/><button>Add</button></form>
+<table border=1><tr><th>ID</th><th>Title</th><th>Diff</th><th>Prio</th><th>Completed</th><th>Actual</th></tr>{% for t in tasks %}<tr><td>{{t.id}}</td><td>{{t.title}}</td><td>{{t.difficulty}}</td><td>{{t.priority}}</td><td>{{t.completed}}</td><td>{{t.actual_time}}</td></tr>{% endfor %}</table>

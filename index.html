@@ -1,0 +1,7 @@
+<!doctype html><title>TaskTracker</title>
+<h1>TaskTracker Dashboard</h1>
+<p>Total tasks: {{ stats.total }}</p>
+<p>Completed: {{ stats.completed }}</p>
+<p>Average completion time: {{ stats.avg_time }}</p>
+<ul><li><a href="/tasks">Tasks</a></li></ul>
+<form action="/register" method="post"><input name="username" placeholder="username"/><button>Register</button></form>
